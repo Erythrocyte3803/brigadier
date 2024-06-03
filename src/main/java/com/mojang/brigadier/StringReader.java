@@ -170,6 +170,7 @@ public class StringReader implements ImmutableStringReader {
         return c >= '0' && c <= '9'
             || c >= 'A' && c <= 'Z'
             || c >= 'a' && c <= 'z'
+            || c >= '\u0080' && c <= '\ud7ff'
             || c == '_' || c == '-'
             || c == '.' || c == '+';
     }
